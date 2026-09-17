@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.player {
+    width: 380px;
+    background: white;
+
+    padding: 25px;
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.song-info {
+    margin-bottom: 20px;
+}
+
+.song-info h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.song-info p {
+    color: #666;
+    margin: 5px;
+}
+
+.progress-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+#progress {
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    margin: 20px 0;
+}
+
+.controls button {
+    width: 50px;
+    height: 40px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #333;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+.controls button:hover {
+    background: #555;
+}
+
+h3 {
+    text-align: left;
+    margin: 15px 0 10px;
+}
+
+#playlist {
+    list-style: none;
+    text-align: left;
+}
+
+#playlist li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+    cursor: pointer;
+}
+
+#playlist li:hover {
+    background: #f0f0f0;
+}
+
+#playlist li.active {
+    background: #e5e5e5;
+    font-weight: bold;
+}
+
+#autoplayBtn {
+    margin-top: 20px;
+
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #333;
+    color: white;
+
+    cursor: pointer;
+}
+
